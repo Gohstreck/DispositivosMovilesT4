@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
-        Log.d("TAco",id+"");
+
         switch (id){
             case R.id.heart:
                 EditText user = findViewById(R.id.userText);
@@ -115,11 +115,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.strength:
                 Toast.makeText(this,R.string.drawer2, Toast.LENGTH_SHORT).show();
-                Log.d("Drawer", "Input:  " + getString(R.string.drawer2));
+
                 break;
             case R.id.hearing:
                 Toast.makeText(this,R.string.drawer3, Toast.LENGTH_SHORT).show();
-                Log.d("Drawer", "Input:  " + getString(R.string.drawer3));
                 break;
 
         }
